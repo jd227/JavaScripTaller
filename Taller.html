@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <fieldset><legend><h1>Taller Cuantitativo 👌</h1> </legend>
+    
+        <fieldset> <legend>  <h2>Contar Múltiplos de 3 - punto 1</h2> </legend>
+            <label for="numInput">Ingrese la cantidad de números:</label>
+            <input type="number" id="numInput">
+            <button onclick="contarMultiplos()">Contar</button>
+            <p id="impares"></p>
+        </fieldset>
+
+    <hr>
+
+        <fieldset><legend><h2>Contar Números Positivos y Negativos - Punto 2</h2></legend>
+            <label for="numeros">Ingrese la cantidad de números:</label>
+            <input type="number" id="numeros">
+            <button onclick="contarPositivosNegativos()">Contar</button>
+        </fieldset>
+        
+    <hr>
+
+        <fieldset><legend><h2>Suma y promedio de números enteros del 1 al 100 - Punto 3</h2></legend>
+            <label for="numero">ingresa el numero inicial</label>
+            <input type="number" id="numInicio">
+            <br> <br>
+            <label for="numero">ingresa el numero final</label>
+            <input type="number" id="numFin">
+
+            <button onclick="calcularSumaYPromedio()">Calcular</button>
+            <p id="suma"></p>
+            <p id="promedio"></p>
+        </fieldset>
+        
+    <hr>
+
+        <fieldset><legend><h2>Calificaciones de Matemáticas - Punto 4</h2></legend>
+
+            <form id="formulario">
+            <label for="nombre">Nombre del estudiante:</label>
+            <input type="text" id="nombre" required>
+            <label for="calificacion">Calificación de Matemáticas:</label>
+            <input type="number" id="calificacion" min="0" max="10" step="0.1" required>
+            <button type="submit">Agregar calificación</button>
+            </form>
+        
+            <div id="resultados">
+            <h2>Resultados</h2>
+            <p>Calificación más alta: <span id="maximaCalificacion"></span></p>
+            <p>Calificación promedio: <span id="promedioCalificaciones"></span></p>
+            <p>Cantidad de estudiantes que pasaron: <span id="aprobados"></span></p>
+            <p>Cantidad de estudiantes que fallaron: <span id="reprobados"></span></p>
+            </div>
+        </fieldset>
+    <hr>
+
+        <fieldset><legend><h2>Suma de números de la serie de Fibonacci - punto 5 </h2></legend>
+            <label for="numero">Ingrese hasta qué número de Fibonacci desea calcular y sumar:</label>
+            <input type="number" id="numFibonacci">
+            <button onclick="sumarFibonacci()">Calcular</button>
+            <p id="resultado"></p>
+        </fieldset> 
+    <hr>
+
+        <fieldset><legend><h2>Verificar si un número es primo - punto 6</h2></legend>
+            <label for="cantidad">Ingrese la cantidad de números que desea verificar:</label>
+            <input type="number" id="cantidadp6">
+            <button onclick="verificarPrimos()">Verificar</button>
+            <div id="resultadosp6"></div>
+        </fieldset>
+
+    <hr>
+
+        <fieldset><legend><h2>Información sobre edades - Punto 7 </h2></legend>
+            <label for="cantidadp7">Ingrese la cantidad de personas:</label>
+            <input type="number" id="cantidadp7">
+            <button onclick="informarEdades()">Informar</button>
+            <div id="resultadop7"></div>
+        </fieldset>
+
+    <hr>
+
+        <fieldset><legend><h2>Suma de números pares entre -15 y 2000 - Punto 8</h2></legend>
+            <label for="numero">ingresa el numero inicial</label>
+            <input type="number" id="numIniciop8">
+            <br> <br>
+            <label for="numero">ingresa el numero final</label>
+            <input type="number" id="numFinp8"> <br><br>
+            <button onclick="sumarNumerosPares()">Sumar</button> 
+            <p id="resultadop8"></p>
+        </fieldset>
+    <hr>
+        <fieldset>
+            <legend><h2>Análisis de números - Punto 9</h2></legend>
+            <label for="cantidad">Ingrese la cantidad de números:</label>
+            <input type="number" id="cantidadp9">
+            <button onclick="analizarNumerosp9()">Analizar</button>
+            <div id="resultadop9"></div>
+        </fieldset>
+
+    <hr>
+
+        <fieldset><legend><h2>Ventas de boletos por ruta - Punto 10</h2></legend>
+            <label for="ruta">Seleccione la ruta:</label>
+            <select id="rutap10">
+            <option value="medellín - miami">Medellín - Miami</option>
+            <option value="medellín - bogotá - roma">Medellín - Bogotá - Roma</option>
+            <option value="medellín - panamá - los ángeles">Medellín - Panamá - Los Ángeles</option>
+            <option value="medellín - bogotá - madrid">Medellín - Bogotá - Madrid</option>
+            <option value="medellín - miami - toronto">Medellín - Miami - Toronto</option>
+            <option value="medellín - buenos aires">Medellín - Buenos Aires</option>
+            </select>
+            <button onclick="calcularVentasp10()">Calcular</button>
+            <div id="resultadosp10"></div>
+        </fieldset>
+
+    <hr>
+
+        <fieldset><legend><h2>Entrevistas en la oficina de empleo - Punto 11</h2></legend>
+        
+            <form id="formulariop11">
+                <label for="genero">Género:</label>
+                <select id="generop11">
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+                </select>
+                <br><br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edadp11" min="1" required>
+                <br><br>
+                <button type="button" onclick="agregarPersonap11()">Agregar Persona</button>
+            </form>
+            <br>
+            <button onclick="calcularEstadisticasp11()">Calcular Estadísticas</button>
+            
+            <div id="resultadosp11"></div>
+        </fieldset>
+
+    <hr>
+
+        <fieldset><legend><h2>Experimentos de física - Punto 12 </h2></legend>
+
+        <form id="formulariop12">
+            <label for="numeroExperimentos">Número total de experimentos:</label>
+            <input type="number" id="numeroExperimentosp12" min="1" required>
+            <br><br>
+        
+            <div id="experimentosp12"></div>
+        
+            <button type="button" onclick="agregarExperimentop12()">Agregar Experimento</button>
+            <br><br>
+        
+            <button type="button" onclick="calcularEstadisticasp12()">Calcular Estadísticas</button>
+            </form>
+        
+            <div id="resultadosp12"></div>
+        </fieldset>
+
+    <hr>
+        <fieldset><legend><h2>Liquidación de Matrícula - Punto 13</h2></legend>
+
+            <form id="formularioMatricula">
+            <h2>Datos del Estudiante</h2>
+            <label for="carnet">Número de Carnet:</label>
+            <input type="text" id="carnetp13" required><br><br>
+        
+            <label for="valorCredito">Valor Crédito:</label>
+            <input type="number" id="valorCreditop13" min="0" required><br><br>
+        
+            <label for="numCreditos">Número de Créditos:</label>
+            <input type="number" id="numCreditosp13" min="0" required><br><br>
+        
+            <button type="button" onclick="liquidarMatriculap13()">Liquidar Matrícula</button>
+            </form>
+        
+            <div id="resultadosMatriculap13"></div>
+
+        </fieldset>
+
+    <hr>
+
+        <fieldset><legend><h2>Cálculo de Salario Neto - Punto 14</h2></legend>
+            <form id="formularioTrabajadores">
+            <h2>Datos del Trabajador</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombrep14"><br><br>
+        
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigop14"><br><br>
+        
+            <label for="estadoCivil">Estado Civil:</label>
+            <input type="text" id="estadoCivilp14"><br><br>
+        
+            <label for="sexo">Sexo:</label>
+            <input type="text" id="sexop14"><br><br>
+        
+            <label for="valorHora">Valor Hora:</label>
+            <input type="number" id="valorHorap14" min="0"><br><br>
+        
+            <label for="horasTrabajadas">Horas Trabajadas:</label>
+            <input type="number" id="horasTrabajadasp14" min="0"><br><br>
+        
+            <button type="button" onclick="calcularSalarioNetop14()">Calcular Salario Neto</button>
+            </form>
+        
+            <div id="resultadosSalario"></div>
+
+    </fieldset>
+
+    <hr>
+
+    <fieldset><legend><h2>Operaciones con Números - Punto 15</h2></legend>
+
+        <form id="formularioNumeros">
+            <h2>Ingrese los números</h2>
+            <label for="cantidadNumeros">Cantidad de números:</label>
+            <input type="number" id="cantidadNumerosp15" min="1" required>
+            <br><br>
+            <div id="numerosInputsp15"></div>
+            <button type="button" onclick="agregarNumerosp15()">Agregar Números</button>
+            <br><br>
+            <button type="button" onclick="calcularEstadisticasp15()">Calcular Estadísticas</button>
+        </form>
+        
+        <div id="resultadosp15"></div>
+    </fieldset>
+
+    <hr>
+
+    <fieldset><legend><h2>Cálculo de Salario Semanal de Obreros - Punto 16</h2></legend>
+    
+
+    <form id="formularioSalario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombrep16"><br><br>
+    
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigop16"><br><br>
+    
+        <label for="horasTrabajadas">Horas Trabajadas:</label>
+        <input type="number" id="horasTrabajadasp16" min="1" required><br><br>
+    
+        <button type="button" onclick="calcularSalario()">Calcular Salario</button>
+    </form>
+    
+    <div id="resultadosSalariop16"></div>
+</fieldset>
+    </fieldset>
+
+<script src="mail.js"></script>
+</body>
+</html>
